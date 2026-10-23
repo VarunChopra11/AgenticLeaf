@@ -172,9 +172,11 @@ See [`docs/API.md`](docs/API.md) for complete REST API reference.
 
 ---
 
-## Verification & Testing
+## Continuous Integration & Testing
 
-Run the comprehensive test suite:
+AgenticLeaf includes automated GitHub Actions CI workflows (`.github/workflows/ci.yml`) running on every push and pull request across Node.js 20.x and 22.x LTS runtimes with Tectonic caching.
+
+Run the comprehensive test suite locally:
 ```bash
 # Run unit and integration tests
 npm test

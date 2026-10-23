@@ -10,8 +10,8 @@
     "start": "node bin/agenticleaf.js serve",
     "serve": "node bin/agenticleaf.js serve",
     "mcp": "node bin/agenticleaf.js mcp",
-    "test": "NODE_OPTIONS=\"-r /home/server/.local/lib/clean-exit.js\" node --test test/**/*.test.js",
-    "test:e2e": "NODE_OPTIONS=\"-r /home/server/.local/lib/clean-exit.js\" node test/verify-e2e.js"
+    "test": "node -r ./scripts/clean-exit.js --test test/**/*.test.js",
+    "test:e2e": "node -r ./scripts/clean-exit.js test/verify-e2e.js"
   },
   "type": "commonjs",
   "dependencies": {

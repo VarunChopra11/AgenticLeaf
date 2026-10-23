@@ -5,7 +5,8 @@ AgenticLeaf is an agent-first, self-hosted LaTeX editor and compilation engine b
 
 ## Conventions
 - Working directory: `/home/server/Programming/AgenticLeaf`
-- Node environment: Node.js with `NODE_OPTIONS="-r /home/server/.local/lib/clean-exit.js"` for clean event-loop termination.
+- Node environment: Node.js with portable `scripts/clean-exit.js` preload for clean process termination across all platforms and CI runners.
+- CI/CD: Automated GitHub Actions workflow (`.github/workflows/ci.yml`) testing Node.js 20.x and 22.x LTS runtimes on push and PR.
 - Compiler: Tectonic 0.17.0 located at `/home/server/.local/bin/tectonic`.
 - Storage: Git-backed project directories under `data/projects`.
 - Licensing: GNU AGPLv3 with Overleaf copyright attribution in `NOTICE`.

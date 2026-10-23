@@ -10,7 +10,7 @@
     "start": "node bin/agenticleaf.js serve",
     "serve": "node bin/agenticleaf.js serve",
     "mcp": "node bin/agenticleaf.js mcp",
-    "test": "node -r ./scripts/clean-exit.js --test test/**/*.test.js",
+    "test": "node -r ./scripts/clean-exit.js --test test/*.test.js",
     "test:e2e": "node -r ./scripts/clean-exit.js test/verify-e2e.js"
   },
   "type": "commonjs",
